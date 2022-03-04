@@ -16,7 +16,7 @@ class MaxyFile
 	public function jsonFile($arr) 
     {
 		$matriz = json_encode($arr);
-		$name = 'matriz_' . date("YmdHis") . '.json'; //Horário padronizado ISO-8601
+		$name = 'matrix_' . date("YmdHis") . '.json'; //Horário padronizado ISO-8601
 		$handle = fopen($name, 'w');
 		fwrite($handle, $matriz);
 		fclose($handle);

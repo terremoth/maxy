@@ -1,0 +1,22 @@
+# TODO list
+- [ ] Reorganize folders and filenames, applying SOLID and match all applicables PSR's
+- [ ] Github CI
+- [ ] PHP Unit Tests covering all the code
+- [ ] Basic structure like Matrix and SquareMatrix
+- [ ] Calculate requirements
+    - [ ] Sum
+    - [ ] Sub
+    - [ ] Mult
+    - [ ] Div
+    - [ ] Cofactor Determinant 
+- [ ] Importers
+  - [ ] CSV
+  - [ ] MathML
+  - [ ] TeX
+- [ ] Exporters
+  - [ ] CSV
+  - [ ] MathML
+  - [ ] TeX
+  - [ ] HTML table
+- [ ] Factories/Generators
+- [ ] Possible Facades

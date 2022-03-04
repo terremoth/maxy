@@ -20,7 +20,8 @@ require_once './maxy_file.trait.php';
  * @license
  * @desc A PHP Framework to work with Math Bi-dimensional Matrices
  */
-class Maxy {
+class Maxy
+{
 
 	/**
 	 * @desc MA.XY. Software Version
@@ -128,7 +129,7 @@ class Maxy {
 		return self::VERSION;
 	}
 
-	static function isErrorStrict() {
+	function isErrorStrict() {
 		return $this->ErrorStrict;
 	}
 
@@ -172,7 +173,7 @@ class Maxy {
 		$this->Group[] = $group;
 	}
 
-	static function setErrorStrict($ErrorStrict) {
+	function setErrorStrict($ErrorStrict) {
 		if (is_bool($ErrorStrict)) {
 			$this->ErrorStrict = $ErrorStrict;
 		} else {
