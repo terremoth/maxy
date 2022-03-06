@@ -2,7 +2,7 @@
 
 namespace Maxy\Importer;
 
-class JsonMatrixImporter
+class CsvImporter
 {
 
 }

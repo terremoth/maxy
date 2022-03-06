@@ -2,7 +2,7 @@
 
 namespace Maxy\Exporter;
 
-class MathMLMatrixExporter
+class MathMLExporter
 {
 
 }

@@ -1,22 +1,59 @@
 # TODO list
-- [ ] Reorganize folders and filenames, applying SOLID and match all applicables PSR's
+
+## Project Structure
+- [ ] Reorganize folders and filenames, applying SOLID principles
+- [ ] Follow PHPTheRightWay Guide
+- [ ] Apply PSR's
+    - [x] PSR Naming Conventions + composer.json 
+  - [x] PSR-1: Basic Coding Standard
+  - [x] PSR-4 (over PSR-0): Autoloader Fully qualified names:  \\\<NamespaceName\>(\\\<SubNamespaceNames\>)*\\\<ClassName\> 
+  - [x] PSR-12 (over the deprecated PSR-2): Extended Coding Style 
+- [ ] All classes and interfaces with PHPDoc  
 - [ ] Github CI
 - [ ] PHP Unit Tests covering all the code
+- [ ] GitHub Code Of Conduct guide .md
+- [ ] Github Issue template
+- [ ] Packagist package to "composer install"
+- [ ] Code coverage, Code climate, to verify code quality
+
+## Implementation
 - [ ] Basic structure like Matrix and SquareMatrix
-- [ ] Calculate requirements
+- [ ] Operations
     - [ ] Sum
     - [ ] Sub
     - [ ] Mult
     - [ ] Div
-    - [ ] Cofactor Determinant 
+    - [ ] Cofactor and Determinant
+      - [ ] Laplace
+      - [ ] Sarrus
+      - [ ] Gauss-Jordan
+      - [ ] Cramer
+      - [ ] Bareiss (montant method)
+    - [ ] Decomposition
+      - [ ] LU
+      - [ ] QR
+      - [ ] SVD (Singular Value Decomposition)
+      - [ ] Crout
+      - [ ] Cholesky
+    - [ ] Matrix Types
+      - [ ] Vandermonde
+      - [ ] Hessiana
+      - [ ] idempotente
+      - [ ] companion
+      - [ ] Frobenius
+      - [ ] Elementary
+      - 
 - [ ] Importers
   - [ ] CSV
   - [ ] MathML
   - [ ] TeX
+  - [ ] HTTP Query string
 - [ ] Exporters
   - [ ] CSV
   - [ ] MathML
   - [ ] TeX
   - [ ] HTML table
+  - [ ] HTTP Query string
+  - [ ] Stub PHP code
 - [ ] Factories/Generators
 - [ ] Possible Facades
