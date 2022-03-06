@@ -42,7 +42,6 @@
       - [ ] companion
       - [ ] Frobenius
       - [ ] Elementary
-      - 
 - [ ] Importers
   - [ ] CSV
   - [ ] MathML

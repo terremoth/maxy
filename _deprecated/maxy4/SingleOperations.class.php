@@ -8,7 +8,7 @@
 
 /**
  *
- * @author fedudubili
+ * @author Lucas M. Dutra
  */
 class SingleOperations {
 

@@ -9,7 +9,7 @@
 /**
  * Description of maxy_fle
  *
- * @author fedudubili
+ * @author Lucas M. Dutra
  */
 class MaxyFile 
 {

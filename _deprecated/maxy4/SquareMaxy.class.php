@@ -6,7 +6,7 @@
 require_once './SingleMaxy.class.php';
 /**
  * Description of SquareMaxys
- * @author fedudubili
+ * @author Lucas M. Dutra
  */
 class SquareMaxy extends SingleMaxy {
 	

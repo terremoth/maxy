@@ -9,7 +9,7 @@
 /**
  * Description of MaxyException
  *
- * @author fedudubili
+ * @author Lucas M. Dutra
  */
 class MaxyException extends Exception {
 	

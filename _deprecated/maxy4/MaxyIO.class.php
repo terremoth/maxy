@@ -9,7 +9,7 @@
 /**
  * Description of MaxyIO
  *
- * @author fedudubili
+ * @author Lucas M. Dutra
  */
 class MaxyIO {
 
