@@ -2,7 +2,7 @@
 
 namespace Maxy\Exporter;
 
-class HtmlTableMatrixExporter
+class HtmlTableExporter
 {
 
 }

@@ -2,7 +2,7 @@
 
 namespace Maxy\Exporter;
 
-class JsonMatrixExporter
+class JsonExporter
 {
 
 }
