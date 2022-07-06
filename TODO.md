@@ -28,6 +28,9 @@
       - [ ] Sarrus
       - [ ] Gauss-Jordan
       - [ ] Cramer
+      - [ ] Jacobi
+      - [ ] Binet
+      - [ ] Chió Rule
       - [ ] Bareiss (montant method)
     - [ ] Decomposition
       - [ ] LU
