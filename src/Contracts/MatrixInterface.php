@@ -4,12 +4,13 @@ namespace Maxy\Contracts;
 
 interface MatrixInterface
 {
-    public function __construct();
+    public function __construct(array $array);
     public function __serialize(): array;
-    public function getRows(): int;
-    public function getRow(): array;
-    public function getColumns(): int;
-    public function getColumn(): array;
+    public function __unserialize($data) : void;
+    public function countRows(): int;
+    public function getRow(int $rowNumber): array ;
+    public function countColumns(): int;
+    public function getColumn(int $columnNumber): array;
     public function toArray() : array;
 
 }
