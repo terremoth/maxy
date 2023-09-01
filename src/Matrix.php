@@ -9,12 +9,19 @@ use Countable;
 use Exception;
 use Serializable;
 
-class Matrix implements MatrixInterface, Countable, Serializable
+class Matrix implements MatrixInterface, Countable
 {
     public array $main_array = []; 
 
     public function __construct(array $array) 
     {   
+        $this->checkArrayForErrors($array);
+
+        $this->main_array = $array;
+    }
+
+    protected function checkArrayForErrors(array $array) : void
+    {
         $rows = count($array);
         $columnsQuantityEachRow = [];
         
@@ -50,21 +57,10 @@ class Matrix implements MatrixInterface, Countable, Serializable
         // every row should have the same quantity of columns:
         $areAllColumnsTheSameSize = (count(array_unique($columnsQuantityEachRow, SORT_REGULAR)) === 1);
 
-		if (!$areAllColumnsTheSameSize) {
+        if (!$areAllColumnsTheSameSize) {
             throw new Exception("The array is not a matrix, because it is not rectangular (have different column sizes)");
         }
 
-        $this->main_array = $array;
-    }
-
-    public function serialize() : array
-    {
-        return $this->__serialize();
-    }
-
-    public function unserialize($data) : void
-    {
-        $this->__unserialize($data);
     }
 
     public function __serialize() : array
@@ -72,9 +68,10 @@ class Matrix implements MatrixInterface, Countable, Serializable
         return $this->main_array;
     }
 
-    public function __unserialize($data) : void
+    public function __unserialize(array $data) : void
     {
-        $this->__construct($data);
+        $this->checkArrayForErrors($data);
+        $this->main_array = $data;
     }
 
     public function count(): int 
@@ -123,7 +120,7 @@ class Matrix implements MatrixInterface, Countable, Serializable
         return $this->main_array;
     }
 
-    public function __toString()
+    public function __toString() : string
     {
         $str = '';
 
