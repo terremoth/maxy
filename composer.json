@@ -19,7 +19,7 @@
   "require": {
     "ext-bcmath": "*",
     "ext-json": "*",
-    "php": ">=7.4"
+    "php": ">=8.1"
   },
   "minimum-stability": "stable",
   "autoload": {
@@ -34,10 +34,10 @@
     "squizlabs/php_codesniffer": "^3.7"
   },
   "scripts": {
-    "fix": "php vendor/bin/phpcbf",
-    "lint": "php vendor/bin/phpcs",
-    "analyze": "php vendor/bin/psalm --shepherd --no-cache",
-    "test": "phpunit tests",
+    "fix": "php vendor/bin/phpcbf -w --tab-width=4 src/",
+    "lint": "php vendor/bin/phpcs src/",
+    "analyze": "php vendor/bin/psalm --shepherd --no-cache --show-info=true src/",
+    "test": "phpunit tests/",
     "ci": [
       "@composer lint",
       "@composer analyze",
